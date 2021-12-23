@@ -1,0 +1,41 @@
+.sec-1{
+    background-image: url(/assets/images/sec1bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    
+
+    header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 50px;
+
+        nav{
+            display: flex;
+            align-items: center;
+            gap: 50px;
+
+            a{
+                @include bigFonts(18px);
+            }
+        }
+
+        .header-icons{
+            display: flex;
+            gap: 50px;
+            align-items: center;
+        }
+    }
+
+    > p{
+        @include bigFonts;
+        justify-self: center;
+    }
+}

@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+@import "./utils/variablesMixins";
+@import "./sections/section-1";
+
+
+
+
+// for all
+
+body{
+    width: 100%;
+    height: 100vh;
+}
+
+section{
+    padding: 80px;
+}
+
+a{
+    text-decoration: none;
+}

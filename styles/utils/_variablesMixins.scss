@@ -1,0 +1,19 @@
+@mixin bigFonts($fsize: 50px, $color: white) {
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: bold;
+    font-size: $fsize;
+    letter-spacing: 0.02em;
+    color: $color;
+};
+
+@mixin flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+};
+
+@mixin flexC {
+    display: flex;
+    flex-direction: column;
+};
