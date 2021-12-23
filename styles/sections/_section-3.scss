@@ -1,0 +1,62 @@
+.sec-3{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+    width: 100%;
+    background-color: #ECECEC;
+
+    hr{
+        width: 80px;
+        height: 6px;
+        background-color: #AB0433;
+        border-radius: 10px;
+
+    }
+    > p{
+        @include bigFonts;
+        color: #000;
+    }
+
+    .products{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        > div{
+            background-color: #fff;
+            border-radius: 15px;
+            padding: 20px;
+        }
+
+        img{
+
+        }
+    }
+
+    .infos{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 10px;
+
+        .brand{
+            display: flex;
+            justify-content: space-between;
+            @include bigFonts(18px);
+            color: #000;
+        }
+
+        > p:nth-child(2){
+            @include bigFonts(16px);
+            color:  #767676;
+        }
+        > p:nth-child(3){
+            @include bigFonts(14px);
+            color:  #767676;
+            border: 1px solid  #767676;
+            border-radius: 20px;
+            padding: 5px;
+            align-self: flex-start;
+            }
+    }
+}

@@ -37,5 +37,38 @@
     > p{
         @include bigFonts;
         justify-self: center;
+        margin-top: 100px;
+    }
+
+    .footer-part{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        padding: 50px 200px;
+        background-color: rgba($color: red, $alpha: .5);
+        position: relative;
+        bottom: -30%;
+        border-radius: 8px;
+
+        > p:nth-child(1){
+            @include bigFonts();
+            text-align: center;
+        }
+
+        > p:nth-child(2){
+            @include bigFonts(40px);
+            text-align: center;
+        }
+
+        .btn{
+            padding: 10px 15px;
+            width: 150px;
+            border: none;
+            border-radius: 20px;
+            background-color: #FF753A;
+        }
+
+
     }
 }

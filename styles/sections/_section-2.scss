@@ -1,0 +1,61 @@
+.sec-2{
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+    width: 100%;
+
+    hr{
+        width: 80px;
+        height: 6px;
+        background-color: #AB0433;
+        border-radius: 10px;
+
+    }
+    > p{
+        @include bigFonts;
+        color: #000;
+    }
+
+    .products{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        > div{
+            box-shadow: .5px .5px 10px;
+        }
+
+        img{
+            background: radial-gradient(98.56% 98.92% at 1.22% 1.08%, #FBFBFB 0%, #D3D3D3 100%);
+            border-radius: 10px 10px 0 0;
+        }
+    }
+
+    .infos{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 10px;
+
+        .brand{
+            display: flex;
+            justify-content: space-between;
+            @include bigFonts(18px);
+            color: #000;
+        }
+
+        > p:nth-child(2){
+            @include bigFonts(16px);
+            color:  #767676;
+        }
+        > p:nth-child(3){
+            @include bigFonts(14px);
+            color:  #767676;
+            border: 1px solid  #767676;
+            border-radius: 20px;
+            padding: 5px;
+            align-self: flex-start;
+            }
+    }
+}
