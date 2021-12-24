@@ -92,7 +92,7 @@
           align-items: center;
   gap: 30px;
   padding: 50px 200px;
-  background-color: rgba(255, 0, 0, 0.5);
+  background-color: rgba(207, 5, 32, 0.7);
   position: relative;
   bottom: -30%;
   border-radius: 8px;
@@ -112,7 +112,7 @@
   font-family: 'Work Sans';
   font-style: normal;
   font-weight: bold;
-  font-size: 40px;
+  font-size: 26px;
   letter-spacing: 0.02em;
   color: white;
   text-align: center;
@@ -124,6 +124,13 @@
   border: none;
   border-radius: 20px;
   background-color: #FF753A;
+  color: white;
+  text-transform: uppercase;
+}
+
+.sec-1 .footer-part .btn:hover {
+  color: #FF753A;
+  background-color: #fff;
 }
 
 .sec-2 {
@@ -273,12 +280,21 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  gap: 25px;
 }
 
 .sec-3 .products > div {
   background-color: #fff;
   border-radius: 15px;
   padding: 20px;
+}
+
+.sec-3 .products .cabel-box {
+  width: 400px;
+}
+
+.sec-3 .products img {
+  margin-top: -50px;
 }
 
 .sec-3 .infos {
@@ -374,6 +390,7 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  gap: 20px;
 }
 
 .sec-4 .row1 > div, .sec-4 .row2 > div {
@@ -419,7 +436,7 @@
 }
 
 footer {
-  padding: 50px;
+  padding: 50px 50px 50px 80px;
   background-color: #505050;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -512,7 +529,7 @@ footer .all-links .logoAndSocialLinks .social {
 }
 
 .footer-of-footer {
-  padding: 20px 20px 20px 50px;
+  padding: 20px 20px 20px 80px;
   background-color: #252525;
 }
 
@@ -524,6 +541,22 @@ footer .all-links .logoAndSocialLinks .social {
   letter-spacing: 0.02em;
   color: white;
   color: #fff;
+}
+
+@media screen and (min-width: 375px) {
+  section {
+    padding: 10px;
+  }
+  section .sec-1 {
+    padding: 10px;
+  }
+  section .sec-1 a {
+    display: none;
+  }
+  section .sec-1 p {
+    text-align: center;
+    font-size: 10px;
+  }
 }
 
 body {
